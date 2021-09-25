@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<title>Flex Box</title>
+<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
+<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu'/>
+<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+<html>
+    <head>
+        <style>
+            body{padding: 30px;
+                
+                background-color: navy;
+
+            }
+           .flex-container{display: flex;
+                          flex-direction: row;
+
+            } 
+
+            .main-content{flex:4;
+                        margin: 10px;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 5px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-size: 16px;
+                        text-align: justify;
+
+            }
+
+            .sidebar{ flex:1;
+                margin: 10px;
+                padding: 20px;
+                background-color: rgb(216, 215, 212);
+                border-radius: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                text-align: justify;
+
+
+            }
+            @media (max-width: 760px) {
+            .flex-container {flex-direction: column;
+                }
+            }
+
+            .alignment{display: block;
+                margin: auto;}
+
+                fieldset {max-width: 100%;
+                    padding-top: 20px;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    border: none;
+                    box-shadow: 0px 0px 2px rgba(0,0,0,1);
+                    background-color: rgb(240,240,240);
+                }
+
+            legend {
+                    background-color: skyBlue;
+                    padding: 0.75rem;
+                    font-size: 1.3rem;
+                    color: white;
+                    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+                    transform: translateX(-1.1rem);
+                    box-shadow: -1px 1px 1px rgba(0,0,0,0.8);
+                }
+
+            legend:after {
+                    content: "";
+                    height: 0;
+                    width:0;
+                    background-color: transparent;
+                    border-top: 0.0rem solid transparent;
+                    border-right:  0.35rem solid black;
+                    border-bottom: 0.45rem solid transparent;
+                    border-left: 0.0rem solid transparent;
+                    position:absolute;
+                    left:-0.075rem;
+                    bottom: -0.45rem;
+                }
+
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                        overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg .tg-zv4m{border-color:rgb(240,240,240);}
+                @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+        </style>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+      }
+   });
+</script>
+
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    </head>
+    <body>
+        <div class="flex-container">
+
+            <div class="main-content">
+
+                <h2>Midpoint Formula</h2>    
+           
+                <p>
+                    If the midpoint between two points $(x_1, y_1)$ and $(x_2, y_2)$ is $(x, y)$, then <br/><br/>
+     
+                     $(x, y)= \left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right) $ 
+                       
+                       
+                </p>
+     
+                <h2>Distance Formula</h2>    
+                
+                <p>
+                    If the distace between two points $(x_1, y_1)$ and $(x_2, y_2)$ is  <br/><br/>
+     
+                     
+                        $\text{distance}=\sqrt{(x_2 - x_1)^2 + (y_2 - 1_1)^2}$ 
+                       
+                        
+                </p>
+     
+                <fieldset>
+                 <legend><b>Example (1)</b></legend>
+                  
+                 <p>If the coordinates of the two points $P$ and $Q$ are $(3,-4)$
+                     and $(5,4)$ respectively. Find:</p>
+                 (a) the midpoint of $PQ$.<br/><br/>
+                 (b) the length of segment $PQ$.<br/><br/>
+                 
+                 <b>Solution</b> <br/><br/>
+
+                 <div class="tg-wrap"><table class="tg">
+                    <tbody>
+                      <tr>
+                        <td class="tg-zv4m">$P=(3,-4), Q=(5,4)$<br/><br/>
+                 
+                            midpoint of $PQ$ <br/><br/>
+                            
+                            $\begin{aligned}
+                            &=\left(\dfrac{3+5}{2}, \dfrac{-4+4}{2}\right)\\\\
+                            &=(4,0)
+                            \end{aligned}$<br/><br/>
+                
+                             length of  $P Q$<br/><br/>
+                            $\begin{aligned}
+                            &=\sqrt{(5-3)^{2}+(4+4)^{2}} \\\\
+                            &=\sqrt{4+64} \\\\
+                            &=\sqrt{68}
+                            \end{aligned}$ </td>
+                      </tr>
+                    </tbody>
+                    </table></div> 
+             </fieldset>
+                
+            </div>
+
+            <div class="sidebar">
+
+                <img class="alignment" src="https://1.bp.blogspot.com/-0FjT1banErs/XAZjKnwvfzI/AAAAAAAACe4/cqSzoQaEszAo0hNxAjy-e1ZEP9D5K92IgCPcBGAYYCw/s320/TM1.png">
+
+            </div>
+            
+
+        </div>
+
+    </body>
+</html>
